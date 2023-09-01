@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #C5E4E7;
+}
+
+.left,.right {
+
+  padding: 2rem;
+  width: 400px;
+}
+.right {
+  background-color: #00474A;
+  border-radius: 1rem;
+}
+.wrapper {
+  display: flex;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  position: relative;
+}
+.wrapper::before {
+  content: "";
+  background: url(./images/logo.svg) no-repeat;
+  display: block;
+  position: absolute;
+  top: -70px;
+  left: 45%;
+  width: 200px;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.r1,.r2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.select-tip {
+  border: 2px solid green;
+}
+
+.div label {
+  position: relative;
+}
+.div .deneme {
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+input[type="radio"] {
+  display: none;
+  
+}
+
+input[type="radio"]:checked + .deneme{
+  background-color: #27c3ae69;
+}
+input[type="radio"]:checked
+.wrapper {
+  display: flex;
+}
+
+.radio-container {
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  gap: 1rem;
+  
+}
+.radio-container label{
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: #00474A;
+}
+.radio-container label p{
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+}
+.custom {
+  position: relative;
+}
+.custom input {
+  width: 100px;
+  height: 100%;
+  background-color: #F2F8FD;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.error {
+  color: red;
+}
+
+
+#bill,#people {
+  height: 45px ;
+  width: 100%;
+  background-color: #F2F8FD;
+  text-align: right;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.tip-amount,.total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button  {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  margin-top: 15rem;
+  border: none;
+  cursor: pointer;
+  background-color: #27C3AE;
+}
+
+button:active {
+  background-color: #27c3ae75;
+}
+
+
+.bill,.people {
+  position: relative;
+}
+.bill img,.people img{
+  position: absolute;
+  top: 37px;
+  left: 1rem;
+}
